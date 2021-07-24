@@ -1,6 +1,6 @@
 package Recursion;
 
-public class Question5 {
+public class Question5_countPaths {
 	public static void main (String[] args) {
 		System.out.println("\u001B[40m" + "\033[1;35m");
 		// ###########################################
