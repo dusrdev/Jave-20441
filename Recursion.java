@@ -5,15 +5,15 @@ class Cls {
 		System.out.println("\u001B[40m" + "\033[1;35m");
 		// ###########################################
 
-
+		//Q1 => Count the paths from start to finish while only moving by K from each element K.
 		int[][] pathsWithK = {{1,3,1,6},
 		{2,8,1,2},
 		{6,2,7,5},
 		{2,4,1,3}}; // 2 paths
-
-		int[][] longestPath = {{1,1,1,1,1,1,1}, {1,1,0,1,0,0,1}, {1,1,1,1,0,1,1}}; //(2 ,5) -> 16
-
 		System.out.println("pathsWithK = " + howManyPaths(pathsWithK));
+
+		//Q2 => Count the longest path from (0,0) to (x,y) while moving only on 1's
+		int[][] longestPath = {{1,1,1,1,1,1,1}, {1,1,0,1,0,0,1}, {1,1,1,1,0,1,1}}; //(2 ,5) -> 16
 		System.out.println("longestPath = " + longestPath(longestPath, 2, 5));
 
 
