@@ -9,8 +9,12 @@ class Cls {
 		int[][] pathsWithK = {{1,3,1,6},
 		{2,8,1,2},
 		{6,2,7,5},
-		{2,4,1,3}};
-		System.out.println("Result = " + howManyPaths(pathsWithK));
+		{2,4,1,3}}; // 2 paths
+
+		int[][] longestPath = {{1,1,1,1,1,1,1}, {1,1,0,1,0,0,1}, {1,1,1,1,0,1,1}}; //(2 ,5) -> 16
+
+		System.out.println("pathsWithK = " + howManyPaths(pathsWithK));
+		System.out.println("longestPath = " + longestPath(longestPath, 2, 5));
 
 
 		// ############################################
@@ -56,5 +60,25 @@ class Cls {
 		howManyPathsV2(mat, r, c - k);
 		mat[r][c] = k;
 		return sum;
+	}
+
+	public static int longestPath(int[][] mat, int x, int y) {
+		return longestPath(mat, x, y, 0, 0);
+	}
+
+	public static int longestPath(int[][] mat, int x, int y, int i, int j) {
+		if (i < 0 || i >= mat.length || j < 0 || j >= mat[0].length || mat[i][j] == 0) {
+			return Integer.MIN_VALUE;
+		}
+		if (i == x && j == y) {
+			return 1;
+		}
+		mat[i][j] = 0;
+		int sumleft = 1 + longestPath(mat, x, y, i - 1, j);
+		int sumright = 1 + longestPath(mat, x, y, i + 1, j);
+		int sumup = 1 + longestPath(mat, x, y, i, j - 1);
+		int sumdown = 1 + longestPath(mat, x, y, i, j + 1);
+		mat[i][j] = 1;
+		return Math.max(Math.max(sumleft, sumright), Math.max(sumup, sumdown));
 	}
 }
