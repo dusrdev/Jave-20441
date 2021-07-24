@@ -27,6 +27,14 @@ class Cls {
 		// For this array and stick of length 8, max price is 23; 23 = 3+10+10
 		int[] prices = {0,1,3,10,9,10,17,17,20};
 		System.out.println("findMaxPrice(prices, 8) = " + findMaxPrice(prices, 8)); //23
+		
+		//Q5 => We have a grid of 2 digit numbers, we need to traverse from start to finish
+		//and count all the possible paths
+		//we moves as follows: the currents first digit as x and last as y
+		//we can go (i+x, j+y) or (i+y, j+x)
+		int[][] countPaths = {{12,22,23,54}, {43,35,21,20}, {34,21,43,21}, {25,30,0,20}, {0, 22, 10, 10}, {20, 13, 3, 45}};
+		System.out.println("countPaths(countPaths) = " + countPaths(countPaths)); //3
+		
 
 
 		// ############################################
@@ -133,5 +141,26 @@ class Cls {
 		}
 		//				(take price + continue with less length) || skip current index
 		return Math.max(prices[i] + findMaxPrice(prices, n - i, i), findMaxPrice(prices, n, i + 1));
+	}
+
+	public static int countPaths(int[][] mat) {
+		return countPaths(mat, 0, 0);
+	}
+
+	public static int countPaths(int[][] mat, int i, int j) {
+		// If out of bounds or already checked, we return 0 so that it falls through in the Math.max
+		if (i < 0 || i >= mat.length || j < 0 || j >= mat[0].length || mat[i][j] == 0) {
+			return Integer.MIN_VALUE;
+		}
+		if (i == mat.length - 1 && j == mat[0].length - 1) { // Reached destination
+			return 1;
+		}
+		int val = mat[i][j];
+		mat[i][j] = 0; // Mark as visited
+		// We can move according to the digits of val
+		int sum = countPaths(mat, i + (val % 10), j + (val / 10)) +
+		countPaths(mat, i + (val / 10), j + (val % 10));
+		mat[i][j] = val; // Return to original value
+		return sum;
 	}
 }
