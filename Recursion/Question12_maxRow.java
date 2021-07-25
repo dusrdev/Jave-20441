@@ -19,7 +19,7 @@ public class Question12_maxRow {
 	}
 
 	private static int maxRow(int[][] mat, int i, int j, int sum, int max, int maxRow) {
-		if (j == mat[0].length) { //reached end of line
+		if (j == mat[0].length) { // reached end of line
 			if (sum > max) { // compare sum and max, and save if bigger
 				max = sum;
 				maxRow = i;
@@ -28,10 +28,9 @@ public class Question12_maxRow {
 			j = 0; // first column
 			sum = 0; // reset sum
 		}
-		if (i <= mat.length - 1) { // still in bounds
-			return maxRow(mat, i, j + 1, sum + mat[i][j], max, maxRow);
-		} else { // out of bounds
+		if (i >= mat.length) { // Finished all rows
 			return maxRow;
 		}
+		return maxRow(mat, i, j + 1, sum + mat[i][j], max, maxRow); // Recursive call
 	}
 }
