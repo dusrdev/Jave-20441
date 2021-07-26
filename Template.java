@@ -1,6 +1,3 @@
-package Recursion;
-// import java.util.Scanner;
-
 public class Template {
 	public static void main (String[] args) {
 		// Color code the outputs
