@@ -8,6 +8,6 @@ public class Template {
 
 		// ############################################
 		// Reset colors
-		System.out.print("\u001B[37m");
+		System.out.println("\u001B[37m");
 	}
 }
