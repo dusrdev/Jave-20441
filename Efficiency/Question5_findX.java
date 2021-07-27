@@ -36,15 +36,16 @@ public class Question5_findX {
 	 */
 	public static boolean findX(int[] a, int x) {
 		int low = 0, high = a.length - 1, mid1, mid2, sum;
+		// usual binary search condition, second condition prevents going out of bounds with arr[low+1]
 		while (low <= high && low < a.length - 1) {
-			mid1 = (low + high) / 2;
-			mid2 = mid1 + 1;
-			sum = a[mid1] + a[mid2];
-			if (sum > x) {
+			mid1 = (low + high) / 2; // set middle
+			mid2 = mid1 + 1; // middle+1
+			sum = a[mid1] + a[mid2]; // saves as a duplicate calculation
+			if (sum > x) { // need bigger values in sum
 				low = mid2;
-			} else if (sum < x) {
+			} else if (sum < x) { // need smaller values in sum
 				high = mid1 - 1;
-			} else {
+			} else { // destination
 				return true;
 			}
 		}
