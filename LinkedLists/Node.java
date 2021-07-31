@@ -1,3 +1,4 @@
+package LinkedLists;
 public class Node<T> {
 	private T _data;
 	private Node<T> _next;
