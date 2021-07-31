@@ -5,6 +5,10 @@ public class BinaryNode<T> {
 	private BinaryNode<T> _leftChild;
 	private BinaryNode<T> _rightChild;
 
+	public BinaryNode(T data) {
+		this(data, null, null);
+	}
+
 	public BinaryNode(T data, BinaryNode<T> left, BinaryNode<T> right) {
 		_data = data;
 		_leftChild = left;
