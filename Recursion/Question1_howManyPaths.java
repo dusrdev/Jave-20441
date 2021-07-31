@@ -28,7 +28,7 @@ public class Question1_howManyPaths {
 	}
 
 	private static int howManyPaths(int[][] mat, int r, int c, boolean[][] mem) {
-		// If out of bounds or already checked, we return 0 so that it doesnt count 
+		// If out of bounds or already checked, we return 0 so that it doesn't count 
 		if (r < 0 || r >= mat.length || c < 0 || c >= mat[0].length || mem[r][c] == true) {
 			return 0;
 		}
@@ -48,10 +48,10 @@ public class Question1_howManyPaths {
 	}
 
 	/**
-	 * This is a veriation of the howManyPaths where we change the original array instead of copy
+	 * This is a variation of the howManyPaths where we change the original array instead of copy
 	 */ 
 	private static int howManyPathsV2(int[][] mat, int r, int c) {
-		// If out of bounds or already checked, we return 0 so that it doesnt count 
+		// If out of bounds or already checked, we return 0 so that it doesn't count 
 		if (r < 0 || r >= mat.length || c < 0 || c >= mat[0].length || mat[r][c] == 0) {
 			return 0;
 		}

@@ -9,7 +9,7 @@ public class Question9_howManySorted {
 
 		/**
 		 * We get an array of length n, and integer max
-		 * We need to return the number of possibilites of filling the array with
+		 * We need to return the number of possibilities of filling the array with
 		 * numbers from 1 to max in ascending order
 		 * IE: n = 3, max = 2; possibilities = 4;
 		 * [1,1,1],[1,1,2],[1,2,2],[2,2,2]

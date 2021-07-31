@@ -22,7 +22,7 @@ public class Question15_merge {
 	}
 
 	private static int[] merge(int[] ar1, int[] ar2, int[] union, int x, int y) {
-		if (x+y == union.length) { // Reahed end
+		if (x+y == union.length) { // Reached end
 			return union;
 		}
 		// If within bounds & 1 smaller than 2 or 2 is at the end

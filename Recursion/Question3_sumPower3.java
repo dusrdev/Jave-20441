@@ -31,7 +31,7 @@ public class Question3_sumPower3 {
 			return false; 
 		}
 		// Take or no take
-		// Deside whether to subtract current power of 3 or skip this one.
+		// Decide whether to subtract current power of 3 or skip this one.
 		return sumPower3(num - (int)Math.pow(3, currentPower), currentPower + 1) || sumPower3(num, currentPower + 1);
 	}
 }

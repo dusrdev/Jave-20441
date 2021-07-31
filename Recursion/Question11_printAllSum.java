@@ -12,7 +12,7 @@ public class Question11_printAllSum {
 		 * We get an array a and integer sum
 		 * we need to print all possible combinations of binary strings where:
 		 * 1. the string length is equal to a.length
-		 * 2. every element in a subarray of a which is a componenet of the sum - sum
+		 * 2. every element in a subarray of a which is a component of the sum - sum
 		 * will be marked as 1 in the string
 		 * others will be 0
 		 * 
@@ -39,7 +39,7 @@ public class Question11_printAllSum {
 	}
 
 	private static void printAllSum(int[] a, int sum, int i, String str) {
-		if (sum == 0 && str.length() == a. length){ // Meets critiria for destination
+		if (sum == 0 && str.length() == a. length){ // Meets criteria for destination
 			System.out.println(str);
 		}
 		if (i >= a.length) { // out of bounds

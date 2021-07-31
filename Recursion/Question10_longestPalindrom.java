@@ -9,7 +9,7 @@ public class Question10_longestPalindrom {
 
 		/**
 		 * We get an array and should return the length of the largest subarray which is
-		 * a palindrom
+		 * a palindrome
 		 */
 
 		int[] arr = { 1, 3, 2, 3, 10, 10, 3, 2, 4 };
@@ -25,7 +25,7 @@ public class Question10_longestPalindrom {
 	}
 
 	private static int longestPalindrom(int[] arr, int start, int end) {
-		if (start == end) { // If both are equal, the same letter is a palindrom
+		if (start == end) { // If both are equal, the same letter is a palindrome
 			return 1;
 		}
 		if (end < start) { // Out of bounds

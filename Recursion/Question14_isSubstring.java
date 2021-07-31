@@ -7,7 +7,7 @@ public class Question14_isSubstring {
 		// ###########################################
 
 		// This doesn't work perfectly...
-		// There is a possible solution which involes using a second method.
+		// There is a possible solution which involves using a second method.
 		// I want to stray away from using help methods, I will get back to this question to attempt again.
 
 		System.out.println("isSubstring(substring, string) = " + isSubstring("substring", "string")); // true
