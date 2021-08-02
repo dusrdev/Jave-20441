@@ -18,4 +18,15 @@ public class List<T> {
 	public void setHead(Node<T > node) {
 		_head = node;
 	}
+
+	public String toString() {
+		String str = "";
+		Node<T> node = _head;
+		while (node != null) {
+			str += node.getData() + " -> ";
+			node = node.getNext();
+		}
+		str += "null";
+		return str;
+	}
 }
