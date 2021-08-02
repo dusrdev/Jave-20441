@@ -50,4 +50,37 @@ public class Question_match {
 		// Continue iteration
 		return match(a, pattern, i + 1, j);
 	}
+
+	/**
+	 * This is an alternative version, similar algorithm, different style
+	 * @param a
+	 * @param pattern
+	 * @param i
+	 * @param j
+	 * @return
+	 */
+	private static boolean match2(int[] a, int[] pattern, int i, int j) {
+		// If we reach pattern length then all conditions have been met
+		// If pattern is empty we still reach end because j is 0 at start and length of
+		// empty
+		// array is 0 so j >= pattern.length => 0 >= 0
+		if (j >= pattern.length) {
+			return true;
+		}
+		if (i >= a.length) { // We haven't reached conditions but a is ended so false
+			return false;
+		}
+
+		boolean cond1 = pattern[j] == 0 && a[i] >= 0 && a[i] <= 99;
+		boolean cond2 = pattern[j] == 1 && a[i] >= 0 && a[i] <= 9;
+		boolean cond3 = pattern[j] == 2 && a[i] >= 10 && a[i] <= 99;
+		
+		if (cond1 || cond2 || cond3) {
+			j++;
+		} else { // condition of pattern has not been met, reset index
+			j = 0;
+		}
+		// Continue iteration
+		return match(a, pattern, i + 1, j);
+	}
 }
