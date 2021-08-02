@@ -11,6 +11,18 @@ public class List<T> {
 		_head = new Node<T>(data);
 	}
 
+	public List(T[] arr) {
+		if (arr.length == 0) {
+			return;
+		}
+		_head = new Node<T>(arr[0]);
+		Node<T> node = _head;
+		for (int i = 1; i < arr.length; i++) {
+			node.setNext(new Node<T>(arr[i]));
+			node = node.getNext();
+		}
+	}
+
 	public Node<T> getHead() {
 		return _head;
 	}
