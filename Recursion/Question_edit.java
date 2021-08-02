@@ -1,7 +1,7 @@
 package Recursion;
 // import java.util.Scanner;
 
-public class Question8_edit {
+public class Question_edit {
 	public static void main(String[] args) {
 		// Color code the outputs
 		System.out.println("\u001B[40m" + "\033[1;35m");

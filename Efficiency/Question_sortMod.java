@@ -2,7 +2,7 @@ package Efficiency;
 
 import java.util.Arrays;
 
-public class Question1_sortMod {
+public class Question_sortMod {
 	public static void main(String[] args) {
 		// Color code the outputs
 		System.out.println("\u001B[40m" + "\033[1;35m");

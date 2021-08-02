@@ -1,6 +1,6 @@
 package Efficiency;
 
-public class Question3_passingCars {
+public class Question_passingCars {
 	public static void main (String[] args) {
 		// Color code the outputs
 		System.out.println("\u001B[40m" + "\033[1;35m");

@@ -1,7 +1,7 @@
 package Recursion;
-import java.util.*;
+import java.util.Arrays;
 
-public class Question15_merge {
+public class Question_merge {
 	public static void main(String[] args) {
 		// Color code the outputs
 		System.out.println("\u001B[40m" + "\033[1;35m");

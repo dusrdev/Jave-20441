@@ -1,6 +1,6 @@
 package Recursion;
 
-public class Question3_sumPower3 {
+public class Question_sumPower3 {
 	public static void main (String[] args) {
 		// Color code the outputs
 		System.out.println("\u001B[40m" + "\033[1;35m");

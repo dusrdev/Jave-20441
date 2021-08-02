@@ -1,7 +1,7 @@
 package Efficiency;
 import java.util.Arrays;
 
-public class Question2_printPairs {
+public class Question_printPairs {
 	public static void main (String[] args) {
 		// Color code the outputs
 		System.out.println("\u001B[40m" + "\033[1;35m");

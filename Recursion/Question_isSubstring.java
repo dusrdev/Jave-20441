@@ -1,6 +1,6 @@
 package Recursion;
 
-public class Question14_isSubstring {
+public class Question_isSubstring {
 	public static void main (String[] args) {
 		// Color code the outputs
 		System.out.println("\u001B[40m" + "\033[1;35m");

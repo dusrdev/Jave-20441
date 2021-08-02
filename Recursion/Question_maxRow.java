@@ -1,6 +1,6 @@
 package Recursion;
 
-public class Question12_maxRow {
+public class Question_maxRow {
 	public static void main(String[] args) {
 		// Color code the outputs
 		System.out.println("\u001B[40m" + "\033[1;35m");

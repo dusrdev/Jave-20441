@@ -1,7 +1,7 @@
 package Recursion;
 // import java.util.Scanner;
 
-public class Question1_howManyPaths {
+public class Question_howManyPaths {
 	public static void main (String[] args) {
 		// Color code the outputs
 		System.out.println("\u001B[40m" + "\033[1;35m");

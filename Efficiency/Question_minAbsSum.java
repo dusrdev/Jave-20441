@@ -1,6 +1,6 @@
 package Efficiency;
 
-public class Question8_minAbsSum {
+public class Question_minAbsSum {
 	public static void main(String[] args) {
 		// Color code the outputs
 		System.out.println("\u001B[40m" + "\033[1;35m");
