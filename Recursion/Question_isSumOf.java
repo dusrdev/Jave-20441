@@ -9,9 +9,9 @@ public class Question_isSumOf {
 		int[] s1 = { 4, 5 };
 		int[] s2 = { 4, 9, 3 };
 
-		System.out.println("isSumOf(s1, 13) = " + isSumOf(s1, 13)); // True
+		System.out.println("isSumOf(s1, 13) = " + isSumOf(s1, 13)); // True => 4 4 5
 		System.out.println("isSumOf(s1, 6) = " + isSumOf(s1, 6)); // False
-		System.out.println("isSumOf(s2, 15) = " + isSumOf(s2, 15)); // True
+		System.out.println("isSumOf(s2, 15) = " + isSumOf(s2, 15)); // True => 4 4 4 3 || 9 3 3
 		System.out.println("isSumOf(s2, 5) = " + isSumOf(s2, 5)); // False
 		System.out.println("isSumOf(s2, 0) = " + isSumOf(s2, 0)); // True
 
@@ -25,21 +25,17 @@ public class Question_isSumOf {
 	}
 
 	private static boolean isSumOf(int[] s, int n, int i, String used) {
-		if (i >= s.length) {
+		if (i >= s.length) { // If we are out of bounds and not returned true yet, we are out of options.
 			return false;
 		}
-		if (n == 0) {
+		if (n == 0) { // If we reach 0, we print the used items and return true
 			System.out.println(used);
 			return true;
 		}
-		else if (n < 0) {
+		else if (n < 0) { // If we passed 0, false
 			return false;
 		}
-		else {
-			if (s[i] <= n) {
-				return isSumOf(s, n - s[i], i, used + s[i]);
-			}
-			return isSumOf(s, n - s[i], i + 1, used + s[i]);
-		}
+		// Recursive calls: Common pattern -> take and do again || not take and proceed
+		return isSumOf(s, n - s[i], i, used + s[i] + " ") || isSumOf(s, n, i + 1, used);
 	}
 }
