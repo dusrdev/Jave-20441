@@ -14,7 +14,7 @@ public class Question_minAbsSum {
 		 */
 
 		int[] a = {-2,-1,3,5,7,8,11,17,25,30,36};
-		System.out.println("minAbsSum(a) = " + minAbsSum(a)); // 4; |-1| + |3|
+		System.out.println("minAbsSum(a) = " + minAbsSum(a)); //  3; |-2| + |-1|
 
 		/**
 		 * In this question I believe an O(n^2) solution will get minimal score.
