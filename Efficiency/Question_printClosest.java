@@ -25,8 +25,9 @@ public class Question_printClosest {
 	}
 
 	/**
-	 * This is one possible solution for the question Time Complexity => O(n) Space
-	 * Complexity => O(1)
+	 * This is one possible solution for the question
+	 * Time Complexity => O(n)
+	 * Space Complexity => O(1)
 	 * 
 	 * @param a
 	 * @param b
@@ -53,7 +54,7 @@ public class Question_printClosest {
 		System.out.println(x1 + " and " + x2);
 
 		/**
-		 * It is important to know that while this algorithm works like as good as
+		 * It is important to know that while this algorithm works as good as
 		 * possible with this time complexity, and it does produce the desired output,
 		 * it is not the most correct. 
 		 * int[] a = {0,4,6,11,11}
