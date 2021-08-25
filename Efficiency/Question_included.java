@@ -7,7 +7,7 @@ public class Question_included {
 		// ###########################################
 
 		/**
-		 * Q4 => x is k-included in y if every digit in x except k digits is included in y
+		 * x is k-included in y if every digit in x except k digits is included in y
 		 * If a digit appears multiple times in x, it is enough that it appears 1 time in y
 		 * Example:
 		 * 4342113 is k-included in 45111 with k=2

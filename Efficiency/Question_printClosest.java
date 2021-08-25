@@ -7,7 +7,7 @@ public class Question_printClosest {
 		// ###########################################
 
 		/**
-		 * Q7 => We receive two ascending sorted arrays and an integer x we need to
+		 * We receive two ascending sorted arrays and an integer x we need to
 		 * print the 2 elements (one from each array) where their sum is the closest to
 		 * x
 		 */

@@ -7,7 +7,7 @@ public class Question_minAbsSum {
 		// ###########################################
 
 		/**
-		 * Q8 => We receive an ascending sorted array with positive and negative integers
+		 * We receive an ascending sorted array with positive and negative integers
 		 * no duplicates
 		 * we need to return the minimal sum of the absolute values of any element
 		 * IE: sum = |a1| + |a2|

@@ -9,14 +9,14 @@ public class Question_sortMod {
 		// ###########################################
 
 		/**
-		 * Q1 => k mod array is an array where for every i,j indexes, array[i]%k <=
+		 * k mod array is an array where for every i,j indexes, array[i]%k <=
 		 * array[j]%k we need to get an array of positive integers and sort it to make
 		 * it a k mod array in maximum efficiency. {35,17,13,252,4,128,7,3,81} =>
 		 * {81,252,13,3,4,35,17,7,128}
 		 * 
 		 * Important Note:
 		 * The key in this question is realizing that K is a fixed value,
-		 * thus, any loop of 0->K will have time efficieny of O(1)
+		 * thus, any loop of 0->K will have time efficiency of O(1)
 		 */
 		int[] a = { 35, 17, 13, 252, 4, 128, 7, 3, 81 };
 		System.out.println("a[] => kmod[]");

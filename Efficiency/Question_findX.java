@@ -7,7 +7,7 @@ public class Question_findX {
 		// ###########################################
 		
 		/**
-		 * Q5 => A semi-sorted array is an array in which the even indexes are sorted
+		 * A semi-sorted array is an array in which the even indexes are sorted
 		 * ascending and the odd indexes are sorted ascending but they are sorted
 		 * separately We receive a semi-sorted array and need to check if there is a
 		 * pair of 2 consecutive elements which sum is x

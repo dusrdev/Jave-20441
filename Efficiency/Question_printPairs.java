@@ -8,7 +8,7 @@ public class Question_printPairs {
 		// ###########################################
 
 		/**
-		 * Q2 => We receive an ascending sorted array a and an integer k
+		 * We receive an ascending sorted array a and an integer k
 		 * we need to print all pairs of elements in which the difference between the elements is equal to k
 		 * 
 		 * a = {-7, -3,0,1,3,5,12,14,17,19,25,30};
@@ -39,7 +39,7 @@ public class Question_printPairs {
 	 * @param k
 	 */
 	public static void printPairs(int[] a, int k) {
-		int x = 0, y = 1, diff; //x is the first in the pair and y second, diff prevents multiple calculations for the same pair, unneccessary but good practice
+		int x = 0, y = 1, diff; //x is the first in the pair and y second, diff prevents multiple calculations for the same pair, unnecessary but good practice
 		// x<=y keeps us in ascending order, y < a.length prevents going out of bounds
 		while (x <= y && y < a.length) {
 			diff = a[y] - a[x]; // difference calculation

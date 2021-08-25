@@ -7,7 +7,7 @@ public class Question_isPythagorean {
 		// ###########################################
 
 		/**
-		 * Q5 => A pythagorean triplet is a group of 3 numbers a, b, c where
+		 * A pythagorean triplet is a group of 3 numbers a, b, c where
 		 * a^2+b^2=c^2. We receive an ascending sorted array with no duplicates We need
 		 * to find if there is at least one possible pythagorean triplet as efficiently
 		 * as possible.

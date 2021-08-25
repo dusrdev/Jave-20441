@@ -7,7 +7,7 @@ public class Question_findAverage {
 		// ###########################################
 
 		/**
-		 * Q9 => Write an efficient function which receives an ascending sorted array
+		 * Write an efficient function which receives an ascending sorted array
 		 * and double x the function should return whether the array has a group of
 		 * consecutive elements whose average equals x.
 		 */
