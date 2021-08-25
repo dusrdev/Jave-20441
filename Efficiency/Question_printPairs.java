@@ -11,7 +11,7 @@ public class Question_printPairs {
 		 * We receive an ascending sorted array a and an integer k
 		 * we need to print all pairs of elements in which the difference between the elements is equal to k
 		 * 
-		 * a = {-7, -3,0,1,3,5,12,14,17,19,25,30};
+		 * a = {-7,-3,0,1,3,5,12,14,17,19,25,30};
 		 * 
 		 * for k=2:
 		 * {1,3}, {3,5}, {12,14}, {17,19}
