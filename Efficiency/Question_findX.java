@@ -9,7 +9,7 @@ public class Question_findX {
 		/**
 		 * Q5 => A semi-sorted array is an array in which the even indexes are sorted
 		 * ascending and the odd indexes are sorted ascending but they are sorted
-		 * seperately We receive a semi-sorted array and need to check if there is a
+		 * separately We receive a semi-sorted array and need to check if there is a
 		 * pair of 2 consecutive elements which sum is x
 		 */
 
@@ -25,7 +25,7 @@ public class Question_findX {
 
 	/**
 	 * The solution is a modified binary search instead of searching for a single
-	 * element we search for the element and the one after it. Required modifitions
+	 * element we search for the element and the one after it. Required modifications
 	 * are 2 mid values, and a second check in the while loop to prevent the mid + 1
 	 * going out of bounds
 	 * Time Complexity => O(logn)
@@ -41,9 +41,9 @@ public class Question_findX {
 			mid1 = (low + high) / 2; // set middle
 			mid2 = mid1 + 1; // middle+1
 			sum = a[mid1] + a[mid2]; // saves as a duplicate calculation
-			if (sum > x) { // need bigger values in sum
+			if (sum < x) { // need bigger values in sum
 				low = mid2;
-			} else if (sum < x) { // need smaller values in sum
+			} else if (sum > x) { // need smaller values in sum
 				high = mid1 - 1;
 			} else { // destination
 				return true;
