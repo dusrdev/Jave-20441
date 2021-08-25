@@ -10,7 +10,7 @@ public class Question_passingCars {
 		 * We receive an array filled with 0's and 1's which represent cars
 		 * 0 represents a car that is going east.
 		 * 1 represents a car that is going west.
-		 * We need to return the number of pair's of elements in which the cars pass each other (meaning one is going west and one east)
+		 * We need to return the number of pairs of elements in which the cars pass each other (meaning one is going west and one east)
 		 */
 
 		int[] a = {0,1,0,1,1};
@@ -31,7 +31,7 @@ public class Question_passingCars {
 	 */
 	public static int passingCars(int[] a) {
 		int oneCount = 0, pairCount = 0;
-		// Count the number of 1's
+		// Count the number of 1's (cars that are going west)
 		for (int i = 0; i < a.length; i++) {
 			if (a[i] == 1) {
 				oneCount++;
